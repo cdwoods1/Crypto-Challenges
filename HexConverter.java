@@ -23,7 +23,7 @@ public class HexConverter {
     }
 
     /**
-     * A sumple method to turn a byte array into a 64Base Encoding.
+     * A simple method to turn a byte array into a 64Base Encoding.
      * @param data
      * @return the encoding of the byte array into 64 Base.
      */
@@ -37,7 +37,7 @@ public class HexConverter {
     public static String byteArrayToHexConverter(byte[] data) {
         StringBuilder sb = new StringBuilder();
         for (byte b : data) {
-            sb.append(String.format("%02X ", b));
+            sb.append(String.format("%02X", b));
         }
         return sb.toString();
     }
